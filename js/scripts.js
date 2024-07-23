@@ -17,9 +17,10 @@ document.addEventListener("DOMContentLoaded", () =>{
             SpanError.textContent = 'Valid email required';
             e.preventDefault();
         } else {
+            e.preventDefault();
             inputEmail.classList.remove('input-error');
             cardMain.classList.add('none');
-            modal.classList.remove('none');
+            modal.classList.add('mostrar');
             modalCorreo.textContent = `${inputEmail.value}`;
         }
 
@@ -28,9 +29,10 @@ document.addEventListener("DOMContentLoaded", () =>{
             SpanError.textContent = 'Valid email required';
             e.preventDefault();
         } else {
+            e.preventDefault();
             inputEmail.classList.remove('input-error');
             cardMain.classList.add('none');
-            modal.classList.remove('none');
+            modal.classList.add('mostrar');
             modalCorreo.textContent = `${inputEmail.value.trim()}`;
         }    
     })
@@ -40,5 +42,5 @@ const btnModal = document.getElementById('btn-modal');
 const modal = document.querySelector('.modal');
 
 btnModal.addEventListener('click', () =>{
-    modal.classList.add('none');
+    modal.classList.remove('mostrar');
 })

@@ -1,13 +1,21 @@
 @media(max-width:600px){
 
-    body{
-        height: 130vh;
+    /* body{
+        height: 100vh;
+    } */
+
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
     }
 
     .card-main{
         flex-direction: column-reverse;
         padding: 1px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
 
     .img-form{
@@ -24,25 +32,9 @@
     }
 }
 
-@media(max-width:470px){
+@media(max-width:450px){
 
     body{
         background: white;
     }
-}
-
-@media(max-width:350px){
-
-    .img-desktop{
-        display: none;
-    }
-
-    .img-mobile{
-        display: block;
-    }
-
-    body{
-        height: 100vh;
-    }
-
 }

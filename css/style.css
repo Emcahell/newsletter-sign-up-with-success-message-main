@@ -33,6 +33,7 @@ body{
     padding: 20px;
     border-radius: 30px;
     background: var(--White);
+    z-index: 500;
 }
 
 .singup-form-container{
@@ -133,12 +134,19 @@ label{
 /*                              - M O D A L -                            */
 
 .modal{
+    position: absolute;
     width: 370px;
     height: auto;
     padding: 50px;
     border-radius: 30px;
     background: var(--White);
     box-shadow: 0px 0px 50px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.mostrar{
+    opacity: 1;
 }
 
 .box-icon-modal svg{
